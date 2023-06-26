@@ -226,7 +226,7 @@ html, body {
   text-decoration: none;
   color: black;
 }
-.main .main-content .main-content1 .buttons .linkedin {
+.main .main-content .main-content1 .buttons a .linkedin {
   width: 220px;
   height: 50px;
   display: flex;
@@ -235,18 +235,19 @@ html, body {
   gap: 10px;
   background-color: white;
   border: 3px solid black;
+  color: black;
   transition: 0.2s;
   font-family: nazi;
 }
-.main .main-content .main-content1 .buttons .linkedin:hover {
+.main .main-content .main-content1 .buttons a .linkedin:hover {
   cursor: pointer;
   background-color: rgb(133, 208, 231);
   box-shadow: 2px 2px 2px black;
 }
-.main .main-content .main-content1 .buttons .linkedin img {
+.main .main-content .main-content1 .buttons a .linkedin img {
   width: 40px;
 }
-.main .main-content .main-content1 .buttons .github {
+.main .main-content .main-content1 .buttons a .github {
   width: 220px;
   height: 50px;
   display: flex;
@@ -255,15 +256,16 @@ html, body {
   gap: 10px;
   background-color: white;
   border: 3px solid black;
+  color: black;
   transition: 0.2s;
   font-family: nazi;
 }
-.main .main-content .main-content1 .buttons .github:hover {
+.main .main-content .main-content1 .buttons a .github:hover {
   cursor: pointer;
   background-color: rgb(133, 208, 231);
   box-shadow: 2px 2px 2px black;
 }
-.main .main-content .main-content1 .buttons .github img {
+.main .main-content .main-content1 .buttons a .github img {
   width: 28px;
 }
 .main .main-content .main-content2 {
@@ -1120,7 +1122,7 @@ html, body {
 }
 @media screen and (max-width: 650px) {
   .contact .form .name-email .name label {
-    margin-top: 10px;
+    margin-top: 20px;
   }
 }
 .contact .form .name-email .name input {
