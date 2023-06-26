@@ -8,7 +8,7 @@ const app = express();
 app.use(bodyParser.urlencoded({ extended: false }));
 
 // Configura las rutas y el controlador para enviar el correo electrónico
-app.post('/email/enviar-correo', (req, res) => {
+app.post('/enviar-correo', (req, res) => {
   const { name, email, message } = req.body;
 
   // Configura el transporte de correo electrónico
