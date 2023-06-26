@@ -17,6 +17,12 @@ html, body {
   padding: 0;
   position: relative;
 }
+@media screen and (max-width: 650px) {
+  .main {
+    height: 900px;
+    background-color: rgb(255, 255, 255);
+  }
+}
 .main .nav {
   width: 1200px;
   height: 60px;
@@ -137,7 +143,6 @@ html, body {
   width: 100%;
   height: calc(100vh - 60px);
   min-height: 840px;
-  background-color: rgb(255, 255, 255);
   background-attachment: fixed;
   display: flex;
   align-items: center;
@@ -184,7 +189,6 @@ html, body {
 }
 .main .main-content .main-content1 span {
   display: block;
-  border-right: 3px solid black;
   width: 20ch;
   padding: 20px 0;
   font-size: 24px;
@@ -192,6 +196,13 @@ html, body {
   text-transform: uppercase;
   color: rgb(118, 199, 236);
   text-shadow: -2px 2px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+}
+@media screen and (max-width: 650px) {
+  .main .main-content .main-content1 span {
+    width: auto;
+    animation: none;
+    white-space: normal;
+  }
 }
 @media screen and (max-width: 1000px) {
   .main .main-content .main-content1 span {
@@ -264,7 +275,7 @@ html, body {
 }
 @media screen and (max-width: 1000px) {
   .main .main-content .main-content2 {
-    margin-top: 30px;
+    margin-top: 0px;
     width: 90%;
   }
 }
@@ -1037,7 +1048,7 @@ html, body {
 }
 @media screen and (max-width: 1200px) {
   .contact .title {
-    width: 95%;
+    width: 90%;
   }
 }
 .contact .title h2 {
@@ -1064,7 +1075,7 @@ html, body {
 }
 @media screen and (max-width: 1200px) {
   .contact .form {
-    width: 95%;
+    width: 90%;
   }
 }
 @media screen and (max-width: 650px) {

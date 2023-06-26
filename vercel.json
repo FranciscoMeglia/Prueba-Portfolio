@@ -1,0 +1,7 @@
+{
+    "functions": {
+      "/email/api/email.js": {
+        "runtime": "nodejs14.x"
+      }
+    }
+  }

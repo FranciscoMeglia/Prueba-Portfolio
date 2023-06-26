@@ -11,3 +11,21 @@
 @keyframes blink {
     50% { border-color: transparent ; }
 }
+
+.me {
+    animation: me 5s infinite;
+}
+
+@keyframes me {
+    0% {
+        scale: 1;
+    }
+
+    50% {
+        scale: 1.05;
+    }
+
+    100% {
+        scale: 1;
+    }
+}
