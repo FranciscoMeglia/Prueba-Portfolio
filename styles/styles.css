@@ -240,7 +240,7 @@ html, body {
 }
 .main .main-content .main-content1 .buttons .linkedin:hover {
   cursor: pointer;
-  background-color: rgb(233, 233, 233);
+  background-color: rgb(133, 208, 231);
   box-shadow: 2px 2px 2px black;
 }
 .main .main-content .main-content1 .buttons .linkedin img {
@@ -260,7 +260,7 @@ html, body {
 }
 .main .main-content .main-content1 .buttons .github:hover {
   cursor: pointer;
-  background-color: rgb(233, 233, 233);
+  background-color: rgb(133, 208, 231);
   box-shadow: 2px 2px 2px black;
 }
 .main .main-content .main-content1 .buttons .github img {
