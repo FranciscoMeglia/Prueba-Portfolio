@@ -182,14 +182,19 @@ html, body {
     text-align: center;
   }
 }
-.main .main-content .main-content1 h2 {
+.main .main-content .main-content1 span {
+  display: block;
+  border-right: 3px solid black;
+  width: 20ch;
+  padding: 20px 0;
+  font-size: 24px;
   font-family: nazi;
   text-transform: uppercase;
-  color: white;
+  color: rgb(118, 199, 236);
   text-shadow: -2px 2px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
 }
 @media screen and (max-width: 1000px) {
-  .main .main-content .main-content1 h2 {
+  .main .main-content .main-content1 span {
     text-align: center;
   }
 }
@@ -208,6 +213,7 @@ html, body {
 }
 .main .main-content .main-content1 .buttons a {
   text-decoration: none;
+  color: black;
 }
 .main .main-content .main-content1 .buttons .linkedin {
   width: 220px;
@@ -284,6 +290,7 @@ html, body {
 }
 .main .down a {
   text-decoration: none;
+  color: black;
 }
 .main .down img {
   width: 40px;
@@ -459,6 +466,7 @@ html, body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  transition: 3s;
 }
 @media screen and (max-width: 1200px) {
   .projects .card-1-2 {
@@ -538,6 +546,7 @@ html, body {
   height: 40px;
   background-color: white;
   border: 2px solid black;
+  color: black;
   transition: 0.2s;
   font-family: nazi;
   font-size: 12px;
@@ -622,6 +631,7 @@ html, body {
   transition: 0.2s;
   font-family: nazi;
   font-size: 12px;
+  color: black;
 }
 @media screen and (max-width: 460px) {
   .projects .card-1-2 .card-2 .buttons button {
@@ -642,6 +652,7 @@ html, body {
   align-items: center;
   justify-content: space-between;
   margin-top: 20px;
+  transition: 3s;
 }
 @media screen and (max-width: 1200px) {
   .projects .card-3-4 {
@@ -724,6 +735,7 @@ html, body {
   transition: 0.2s;
   font-family: nazi;
   font-size: 12px;
+  color: black;
 }
 @media screen and (max-width: 460px) {
   .projects .card-3-4 .card-3 .buttons button {
@@ -805,6 +817,7 @@ html, body {
   transition: 0.2s;
   font-family: nazi;
   font-size: 12px;
+  color: black;
 }
 @media screen and (max-width: 460px) {
   .projects .card-3-4 .card-4 .buttons button {
@@ -825,6 +838,7 @@ html, body {
   align-items: center;
   justify-content: space-between;
   margin-top: 20px;
+  transition: 3s;
 }
 @media screen and (max-width: 1200px) {
   .projects .card-5-6 {
@@ -907,6 +921,7 @@ html, body {
   transition: 0.2s;
   font-family: nazi;
   font-size: 12px;
+  color: black;
 }
 @media screen and (max-width: 460px) {
   .projects .card-5-6 .card-5 .buttons button {
@@ -988,6 +1003,7 @@ html, body {
   transition: 0.2s;
   font-family: nazi;
   font-size: 12px;
+  color: black;
 }
 @media screen and (max-width: 460px) {
   .projects .card-5-6 .card-6 .buttons button {

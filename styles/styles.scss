@@ -203,12 +203,17 @@ html , body {
                 }
             }
 
-            h2 {
+            span {
+                display: block;
+                border-right: 3px solid black;
+                width: 20ch;
+                padding: 20px 0;
+                font-size: 24px;
                 font-family: nazi;
                 text-transform: uppercase;
-                color: white;
+                color: rgb(118, 199, 236);
                 text-shadow: -2px 2px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black; 
-
+        
                 @include tablet {
                     text-align: center;
                 }
@@ -507,6 +512,7 @@ html , body {
         display: flex;
         align-items: center;
         justify-content: space-between;
+        transition: 3s;
 
         @include resp {
             width: 95%;
@@ -699,6 +705,7 @@ html , body {
         align-items: center;
         justify-content: space-between;
         margin-top: 20px;
+        transition: 3s;
 
         @include resp {
             width: 95%;
@@ -891,6 +898,7 @@ html , body {
         align-items: center;
         justify-content: space-between;
         margin-top: 20px;
+        transition: 3s;
 
         @include resp {
             width: 95%;

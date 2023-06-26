@@ -48,15 +48,20 @@ function navigation() {
 
 const elemento1 = document.querySelector(".about");
 const elemento2 = document.querySelector(".skills");
-const elemento3 = document.querySelector(".form");
-const elemento4 = document.querySelector(".footer");
+const elemento3 = document.querySelector(".form")
+//const elemento4 = document.querySelector(".footer")
+const elemento5 = document.querySelector(".card-1-2")
+const elemento6 = document.querySelector(".card-3-4")
+const elemento7 = document.querySelector(".card-5-6")
 
 
 // OBSERVED ELEMENTS:
-
-observer.observe(elemento1);
-observer.observe(elemento2);
+observer.observe(elemento1)
+observer.observe(elemento2)
 observer.observe(elemento3)
-observer.observe(elemento4)
+//observer.observe(elemento4)
+observer.observe(elemento5)
+observer.observe(elemento6)
+observer.observe(elemento7)
 
 
