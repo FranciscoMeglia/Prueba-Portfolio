@@ -1122,7 +1122,7 @@ html, body {
 }
 @media screen and (max-width: 650px) {
   .contact .form .name-email .name label {
-    margin-top: 20px;
+    margin-top: 15px;
   }
 }
 .contact .form .name-email .name input {
