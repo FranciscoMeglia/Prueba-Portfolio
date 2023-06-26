@@ -186,7 +186,7 @@ html , body {
                 width: 90%;
             }
 
-            & h1 {
+            h1 {
                 font-size: 50px;
                 color: white;
                 margin-top: 20px;
@@ -203,7 +203,7 @@ html , body {
                 }
             }
 
-            & h2 {
+            h2 {
                 font-family: nazi;
                 text-transform: uppercase;
                 color: white;
@@ -228,6 +228,7 @@ html , body {
 
                 a {
                     text-decoration: none;
+                    color: black;
                 }
                 
                 .linkedin {
@@ -316,6 +317,7 @@ html , body {
 
         a {
             text-decoration: none;
+            color: black;
         }
 
         img {
