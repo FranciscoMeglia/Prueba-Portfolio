@@ -1,18 +1,18 @@
-const nodemailer = require('nodemailer');
-const express = require('express');
-const bodyParser = require('body-parser');
+import { createTransport } from 'nodemailer';
+import express from 'express';
+import { urlencoded } from 'body-parser';
 
 const app = express();
 
 // Configura el middleware para analizar los datos enviados en el cuerpo del formulario
-app.use(bodyParser.urlencoded({ extended: false }));
+app.use(urlencoded({ extended: false }));
 
 // Configura las rutas y el controlador para enviar el correo electrónico
 app.post('/enviar-correo', (req, res) => {
   const { name, email, message } = req.body;
 
   // Configura el transporte de correo electrónico
-  const transporter = nodemailer.createTransport({
+  const transporter = createTransport({
     service: 'Gmail',
     auth: {
       user: 'megliafrancisco@gmail.com',
