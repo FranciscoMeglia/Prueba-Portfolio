@@ -243,51 +243,53 @@ html , body {
                 a {
                     text-decoration: none;
                     color: black;
+
+                    .linkedin {
+                        width: 220px;
+                        height: 50px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 10px;
+                        background-color: white;
+                        border: 3px solid black;
+                        transition: 0.2s;
+                        font-family: nazi;
+                        
+                        &:hover {
+                            cursor: pointer;
+                            background-color: rgb(133, 208, 231);
+                            box-shadow: 2px 2px 2px black;
+                        }
+        
+                        img {
+                            width: 40px;
+                        }
+                    }
                 }
                 
-                .linkedin {
-                    width: 220px;
-                    height: 50px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    gap: 10px;
-                    background-color: white;
-                    border: 3px solid black;
-                    transition: 0.2s;
-                    font-family: nazi;
-                    
-                    &:hover {
-                        cursor: pointer;
-                        background-color: rgb(133, 208, 231);
-                        box-shadow: 2px 2px 2px black;
-                    }
+                a {
+                    .github {
+                        width: 220px;
+                        height: 50px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 10px;
+                        background-color: white;
+                        border: 3px solid black;
+                        transition: 0.2s;
+                        font-family: nazi;
     
-                    img {
-                        width: 40px;
-                    }
-                }
-    
-                .github {
-                    width: 220px;
-                    height: 50px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    gap: 10px;
-                    background-color: white;
-                    border: 3px solid black;
-                    transition: 0.2s;
-                    font-family: nazi;
-
-                    &:hover {
-                        cursor: pointer;
-                        background-color: rgb(133, 208, 231);
-                        box-shadow: 2px 2px 2px black;
-                    }
-    
-                    img {
-                        width: 28px;
+                        &:hover {
+                            cursor: pointer;
+                            background-color: rgb(133, 208, 231);
+                            box-shadow: 2px 2px 2px black;
+                        }
+        
+                        img {
+                            width: 28px;
+                        }
                     }
                 }   
             }
