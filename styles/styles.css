@@ -1,0 +1,1262 @@
+@font-face {
+  font-family: "nazi";
+  src: url("/assets/WILD-WORLD.ttf");
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+.main {
+  width: 100%;
+  height: 100vh;
+  min-height: 900px;
+  background-color: rgb(255, 255, 255);
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+.main .nav {
+  width: 1200px;
+  height: 60px;
+  margin: auto;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-bottom: 2px solid black;
+  border-right: 2px solid black;
+  border-left: 2px solid black;
+}
+@media screen and (max-width: 1200px) {
+  .main .nav {
+    width: 100%;
+    border-left: none;
+    border-right: none;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .main .nav {
+    justify-content: space-between;
+  }
+}
+.main .nav img {
+  width: 40px;
+  display: none;
+}
+@media screen and (max-width: 1000px) {
+  .main .nav img {
+    display: block;
+    padding-right: 10px;
+    cursor: pointer;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .main .nav .logo {
+    padding-left: 10px;
+  }
+}
+.main .nav .logo h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 900;
+  color: white;
+  text-transform: uppercase;
+  text-shadow: -2px 2px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+}
+@media screen and (max-width: 1000px) {
+  .main .nav .nav-container {
+    display: none;
+  }
+}
+.main .nav .nav-container ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+.main .nav .nav-container ul a {
+  text-decoration: none;
+  color: white;
+  font-family: nazi;
+  text-transform: uppercase;
+  font-size: 13px;
+  text-shadow: -2px 2px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+  transition: 0.2s;
+}
+.main .nav .nav-container ul a:hover {
+  color: black;
+  text-shadow: none;
+}
+.main .navMobile {
+  width: 100%;
+  height: 100vh;
+  margin: auto;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+}
+.main .navMobile img {
+  width: 25px;
+  position: absolute;
+  top: 2vh;
+  right: 7vw;
+  opacity: 0.8;
+}
+.main .navMobile .logo {
+  display: none;
+}
+.main .navMobile .nav-container {
+  width: auto;
+  height: auto;
+  margin: auto;
+  background-color: white;
+  display: block;
+}
+.main .navMobile .nav-container ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+}
+.main .navMobile .nav-container ul a {
+  text-decoration: none;
+  color: white;
+  font-family: nazi;
+  text-transform: uppercase;
+  font-size: 25px;
+  text-shadow: -2px 2px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+  transition: 0.2s;
+}
+.main .navMobile .nav-container ul a:hover {
+  color: black;
+  text-shadow: none;
+}
+.main .main-content {
+  width: 100%;
+  height: calc(100vh - 60px);
+  min-height: 840px;
+  background-color: rgb(255, 255, 255);
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+@media screen and (max-width: 1000px) {
+  .main .main-content {
+    flex-direction: column-reverse;
+    gap: 0;
+  }
+}
+.main .main-content .main-content1 {
+  width: 590px;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+@media screen and (max-width: 1000px) {
+  .main .main-content .main-content1 {
+    justify-content: flex-start;
+    align-items: center;
+    width: 90%;
+  }
+}
+.main .main-content .main-content1 h1 {
+  font-size: 50px;
+  color: white;
+  margin-top: 20px;
+  margin-bottom: 0;
+  margin-left: 5px;
+  font-family: nazi;
+  text-transform: uppercase;
+  transition: 1s;
+  text-shadow: -10px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+}
+@media screen and (max-width: 1000px) {
+  .main .main-content .main-content1 h1 {
+    font-size: 30px;
+    text-align: center;
+  }
+}
+.main .main-content .main-content1 h2 {
+  font-family: nazi;
+  text-transform: uppercase;
+  color: white;
+  text-shadow: -2px 2px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+}
+@media screen and (max-width: 1000px) {
+  .main .main-content .main-content1 h2 {
+    text-align: center;
+  }
+}
+.main .main-content .main-content1 .buttons {
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+@media screen and (max-width: 1000px) {
+  .main .main-content .main-content1 .buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+.main .main-content .main-content1 .buttons a {
+  text-decoration: none;
+}
+.main .main-content .main-content1 .buttons .linkedin {
+  width: 220px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: white;
+  border: 3px solid black;
+  transition: 0.2s;
+  font-family: nazi;
+}
+.main .main-content .main-content1 .buttons .linkedin:hover {
+  cursor: pointer;
+  background-color: rgb(233, 233, 233);
+  box-shadow: 2px 2px 2px black;
+}
+.main .main-content .main-content1 .buttons .linkedin img {
+  width: 40px;
+}
+.main .main-content .main-content1 .buttons .github {
+  width: 220px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: white;
+  border: 3px solid black;
+  transition: 0.2s;
+  font-family: nazi;
+}
+.main .main-content .main-content1 .buttons .github:hover {
+  cursor: pointer;
+  background-color: rgb(233, 233, 233);
+  box-shadow: 2px 2px 2px black;
+}
+.main .main-content .main-content1 .buttons .github img {
+  width: 28px;
+}
+.main .main-content .main-content2 {
+  width: 590px;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 1000px) {
+  .main .main-content .main-content2 {
+    margin-top: 30px;
+    width: 90%;
+  }
+}
+.main .main-content .main-content2 img {
+  width: 70%;
+}
+@media screen and (max-width: 1000px) {
+  .main .main-content .main-content2 img {
+    width: 300px;
+  }
+}
+.main .down {
+  width: 200px;
+  height: 50px;
+  position: absolute;
+  bottom: 2vh;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.main .down a {
+  text-decoration: none;
+}
+.main .down img {
+  width: 40px;
+}
+.main .down img:hover {
+  cursor: pointer;
+}
+
+.about-skills {
+  width: 100%;
+  height: 60vh;
+  min-height: 580px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 1000px) {
+  .about-skills {
+    height: auto;
+  }
+}
+.about-skills .title {
+  background-color: rgb(255, 255, 255);
+  width: 1200px;
+}
+@media screen and (max-width: 1000px) {
+  .about-skills .title {
+    width: 95%;
+  }
+}
+.about-skills .title h2 {
+  text-align: start;
+  font-family: nazi;
+  text-transform: uppercase;
+  font-size: 28px;
+  color: white;
+  text-shadow: -4px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+}
+@media screen and (max-width: 1000px) {
+  .about-skills .title h2 {
+    text-align: center;
+  }
+}
+.about-skills .about-skills-container {
+  width: 1200px;
+  height: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+@media screen and (max-width: 1000px) {
+  .about-skills .about-skills-container {
+    height: auto;
+    flex-direction: column;
+    width: 100%;
+  }
+}
+.about-skills .about-skills-container .about {
+  width: 590px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid black;
+  transition: 3s;
+}
+@media screen and (max-width: 650px) {
+  .about-skills .about-skills-container .about {
+    width: 90%;
+  }
+}
+.about-skills .about-skills-container .about p {
+  color: black;
+  font-family: monospace;
+  font-size: 20px;
+  width: 90%;
+}
+.about-skills .about-skills-container .about ul li {
+  color: black;
+  font-size: 15px;
+  font-family: monospace;
+}
+.about-skills .about-skills-container .about ul li img {
+  width: 18px;
+}
+.about-skills .about-skills-container .skills {
+  width: 590px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  transition: 3s;
+}
+@media screen and (max-width: 1000px) {
+  .about-skills .about-skills-container .skills {
+    padding-top: 20px;
+    padding-bottom: 30px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .about-skills .about-skills-container .skills {
+    width: 95%;
+  }
+}
+.about-skills .about-skills-container .skills .skills-container {
+  width: 100%;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 20px;
+}
+@media screen and (max-width: 1000px) {
+  .about-skills .about-skills-container .skills .skills-container {
+    justify-content: center;
+  }
+}
+.about-skills .about-skills-container .skills .skills-container .skill {
+  width: 100px;
+  height: 100%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid black;
+}
+.about-skills .about-skills-container .skills .skills-container .skill img {
+  width: 60px;
+  transition: 0.2s;
+}
+.about-skills .about-skills-container .skills .skills-container .skill img:hover {
+  width: 70px;
+}
+
+.projects {
+  width: 100%;
+  height: auto;
+  background-color: rgb(255, 255, 255);
+}
+.projects .title {
+  background-color: rgb(255, 255, 255);
+  margin: auto;
+  width: 1200px;
+}
+@media screen and (max-width: 1200px) {
+  .projects .title {
+    width: 95%;
+  }
+}
+.projects .title h2 {
+  text-align: end;
+  font-family: nazi;
+  text-transform: uppercase;
+  font-size: 28px;
+  color: white;
+  text-shadow: -4px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+}
+@media screen and (max-width: 1000px) {
+  .projects .title h2 {
+    text-align: center;
+  }
+}
+.projects .card-1-2 {
+  margin: auto;
+  width: 1200px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media screen and (max-width: 1200px) {
+  .projects .card-1-2 {
+    width: 95%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .projects .card-1-2 {
+    flex-direction: column;
+    margin-top: 40px;
+    gap: 40px;
+  }
+}
+.projects .card-1-2 .card-1 {
+  width: 450px;
+  height: 350px;
+  background-color: rgb(255, 255, 255);
+  border: 2px solid black;
+  transition: 0.3s;
+}
+@media screen and (max-width: 460px) {
+  .projects .card-1-2 .card-1 {
+    width: 90%;
+    height: auto;
+  }
+}
+.projects .card-1-2 .card-1:hover {
+  box-shadow: -10px 10px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+}
+.projects .card-1-2 .card-1 .img {
+  width: 100%;
+  height: 64.5%;
+  background-color: aqua;
+  border-bottom: 3px solid black;
+}
+@media screen and (max-width: 460px) {
+  .projects .card-1-2 .card-1 .img {
+    width: 100%;
+    height: auto;
+    background-color: black;
+  }
+}
+.projects .card-1-2 .card-1 .img img {
+  width: 100%;
+}
+@media screen and (max-width: 460px) {
+  .projects .card-1-2 .card-1 .img img {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
+}
+.projects .card-1-2 .card-1 h3 {
+  font-family: monospace;
+  text-transform: uppercase;
+  text-align: center;
+}
+.projects .card-1-2 .card-1 .buttons {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+@media screen and (max-width: 460px) {
+  .projects .card-1-2 .card-1 .buttons {
+    height: 60px;
+  }
+}
+.projects .card-1-2 .card-1 .buttons a {
+  text-decoration: none;
+  color: black;
+}
+.projects .card-1-2 .card-1 .buttons button {
+  width: 150px;
+  height: 40px;
+  background-color: white;
+  border: 2px solid black;
+  transition: 0.2s;
+  font-family: nazi;
+  font-size: 12px;
+}
+@media screen and (max-width: 460px) {
+  .projects .card-1-2 .card-1 .buttons button {
+    width: 100px;
+    height: 35px;
+  }
+}
+.projects .card-1-2 .card-1 .buttons button:hover {
+  cursor: pointer;
+  background-color: rgb(233, 233, 233);
+  box-shadow: 2px 2px 2px black;
+}
+.projects .card-1-2 .card-2 {
+  width: 450px;
+  height: 350px;
+  background-color: rgb(255, 255, 255);
+  border: 2px solid black;
+  transition: 0.5s;
+}
+@media screen and (max-width: 460px) {
+  .projects .card-1-2 .card-2 {
+    width: 90%;
+    height: auto;
+  }
+}
+.projects .card-1-2 .card-2:hover {
+  box-shadow: -10px 10px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+}
+.projects .card-1-2 .card-2 .img {
+  width: 100%;
+  height: 64.5%;
+  background-color: aqua;
+  border-bottom: 3px solid black;
+}
+@media screen and (max-width: 460px) {
+  .projects .card-1-2 .card-2 .img {
+    width: 100%;
+    height: auto;
+    background-color: black;
+  }
+}
+.projects .card-1-2 .card-2 .img img {
+  width: 100%;
+}
+@media screen and (max-width: 460px) {
+  .projects .card-1-2 .card-2 .img img {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
+}
+.projects .card-1-2 .card-2 h3 {
+  font-family: monospace;
+  text-transform: uppercase;
+  text-align: center;
+}
+.projects .card-1-2 .card-2 .buttons {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+@media screen and (max-width: 460px) {
+  .projects .card-1-2 .card-2 .buttons {
+    height: 60px;
+  }
+}
+.projects .card-1-2 .card-2 .buttons a {
+  text-decoration: none;
+  color: black;
+}
+.projects .card-1-2 .card-2 .buttons button {
+  width: 150px;
+  height: 40px;
+  background-color: white;
+  border: 2px solid black;
+  transition: 0.2s;
+  font-family: nazi;
+  font-size: 12px;
+}
+@media screen and (max-width: 460px) {
+  .projects .card-1-2 .card-2 .buttons button {
+    width: 100px;
+    height: 35px;
+  }
+}
+.projects .card-1-2 .card-2 .buttons button:hover {
+  cursor: pointer;
+  background-color: rgb(233, 233, 233);
+  box-shadow: 2px 2px 2px black;
+}
+.projects .card-3-4 {
+  margin: auto;
+  width: 1200px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+@media screen and (max-width: 1200px) {
+  .projects .card-3-4 {
+    width: 95%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .projects .card-3-4 {
+    flex-direction: column;
+    margin-top: 40px;
+    gap: 40px;
+  }
+}
+.projects .card-3-4 .card-3 {
+  width: 450px;
+  height: 350px;
+  background-color: rgb(255, 255, 255);
+  border: 2px solid black;
+  transition: 0.5s;
+}
+@media screen and (max-width: 460px) {
+  .projects .card-3-4 .card-3 {
+    width: 90%;
+    height: auto;
+  }
+}
+.projects .card-3-4 .card-3:hover {
+  box-shadow: -10px 10px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+}
+.projects .card-3-4 .card-3 .img {
+  width: 100%;
+  height: 64.5%;
+  background-color: aqua;
+  border-bottom: 3px solid black;
+}
+@media screen and (max-width: 460px) {
+  .projects .card-3-4 .card-3 .img {
+    width: 100%;
+    height: auto;
+    background-color: black;
+  }
+}
+.projects .card-3-4 .card-3 .img img {
+  width: 100%;
+}
+@media screen and (max-width: 460px) {
+  .projects .card-3-4 .card-3 .img img {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
+}
+.projects .card-3-4 .card-3 h3 {
+  font-family: monospace;
+  text-transform: uppercase;
+  text-align: center;
+}
+.projects .card-3-4 .card-3 .buttons {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+@media screen and (max-width: 460px) {
+  .projects .card-3-4 .card-3 .buttons {
+    height: 60px;
+  }
+}
+.projects .card-3-4 .card-3 .buttons a {
+  text-decoration: none;
+  color: black;
+}
+.projects .card-3-4 .card-3 .buttons button {
+  width: 150px;
+  height: 40px;
+  background-color: white;
+  border: 2px solid black;
+  transition: 0.2s;
+  font-family: nazi;
+  font-size: 12px;
+}
+@media screen and (max-width: 460px) {
+  .projects .card-3-4 .card-3 .buttons button {
+    width: 100px;
+    height: 35px;
+  }
+}
+.projects .card-3-4 .card-3 .buttons button:hover {
+  cursor: pointer;
+  background-color: rgb(233, 233, 233);
+  box-shadow: 2px 2px 2px black;
+}
+.projects .card-3-4 .card-4 {
+  width: 450px;
+  height: 350px;
+  background-color: rgb(255, 255, 255);
+  border: 2px solid black;
+  transition: 0.5s;
+}
+@media screen and (max-width: 460px) {
+  .projects .card-3-4 .card-4 {
+    width: 90%;
+    height: auto;
+  }
+}
+.projects .card-3-4 .card-4:hover {
+  box-shadow: -10px 10px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+}
+.projects .card-3-4 .card-4 .img {
+  width: 100%;
+  height: 64.5%;
+  background-color: aqua;
+  border-bottom: 3px solid black;
+}
+@media screen and (max-width: 460px) {
+  .projects .card-3-4 .card-4 .img {
+    width: 100%;
+    height: auto;
+    background-color: black;
+  }
+}
+.projects .card-3-4 .card-4 .img img {
+  width: 100%;
+}
+@media screen and (max-width: 460px) {
+  .projects .card-3-4 .card-4 .img img {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
+}
+.projects .card-3-4 .card-4 h3 {
+  font-family: monospace;
+  text-transform: uppercase;
+  text-align: center;
+}
+.projects .card-3-4 .card-4 .buttons {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+@media screen and (max-width: 460px) {
+  .projects .card-3-4 .card-4 .buttons {
+    height: 60px;
+  }
+}
+.projects .card-3-4 .card-4 .buttons a {
+  text-decoration: none;
+  color: black;
+}
+.projects .card-3-4 .card-4 .buttons button {
+  width: 150px;
+  height: 40px;
+  background-color: white;
+  border: 2px solid black;
+  transition: 0.2s;
+  font-family: nazi;
+  font-size: 12px;
+}
+@media screen and (max-width: 460px) {
+  .projects .card-3-4 .card-4 .buttons button {
+    width: 100px;
+    height: 35px;
+  }
+}
+.projects .card-3-4 .card-4 .buttons button:hover {
+  cursor: pointer;
+  background-color: rgb(233, 233, 233);
+  box-shadow: 2px 2px 2px black;
+}
+.projects .card-5-6 {
+  margin: auto;
+  width: 1200px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+@media screen and (max-width: 1200px) {
+  .projects .card-5-6 {
+    width: 95%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .projects .card-5-6 {
+    flex-direction: column;
+    margin-top: 40px;
+    gap: 40px;
+  }
+}
+.projects .card-5-6 .card-5 {
+  width: 450px;
+  height: 350px;
+  background-color: rgb(255, 255, 255);
+  border: 2px solid black;
+  transition: 0.5s;
+}
+@media screen and (max-width: 460px) {
+  .projects .card-5-6 .card-5 {
+    width: 90%;
+    height: auto;
+  }
+}
+.projects .card-5-6 .card-5:hover {
+  box-shadow: -10px 10px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+}
+.projects .card-5-6 .card-5 .img {
+  width: 100%;
+  height: 64.5%;
+  background-color: aqua;
+  border-bottom: 3px solid black;
+}
+@media screen and (max-width: 460px) {
+  .projects .card-5-6 .card-5 .img {
+    width: 100%;
+    height: auto;
+    background-color: black;
+  }
+}
+.projects .card-5-6 .card-5 .img img {
+  width: 100%;
+}
+@media screen and (max-width: 460px) {
+  .projects .card-5-6 .card-5 .img img {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
+}
+.projects .card-5-6 .card-5 h3 {
+  font-family: monospace;
+  text-transform: uppercase;
+  text-align: center;
+}
+.projects .card-5-6 .card-5 .buttons {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+@media screen and (max-width: 460px) {
+  .projects .card-5-6 .card-5 .buttons {
+    height: 60px;
+  }
+}
+.projects .card-5-6 .card-5 .buttons a {
+  text-decoration: none;
+  color: black;
+}
+.projects .card-5-6 .card-5 .buttons button {
+  width: 150px;
+  height: 40px;
+  background-color: white;
+  border: 2px solid black;
+  transition: 0.2s;
+  font-family: nazi;
+  font-size: 12px;
+}
+@media screen and (max-width: 460px) {
+  .projects .card-5-6 .card-5 .buttons button {
+    width: 100px;
+    height: 35px;
+  }
+}
+.projects .card-5-6 .card-5 .buttons button:hover {
+  cursor: pointer;
+  background-color: rgb(233, 233, 233);
+  box-shadow: 2px 2px 2px black;
+}
+.projects .card-5-6 .card-6 {
+  width: 450px;
+  height: 350px;
+  background-color: rgb(255, 255, 255);
+  border: 2px solid black;
+  transition: 0.5s;
+}
+@media screen and (max-width: 460px) {
+  .projects .card-5-6 .card-6 {
+    width: 90%;
+    height: auto;
+  }
+}
+.projects .card-5-6 .card-6:hover {
+  box-shadow: -10px 10px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+}
+.projects .card-5-6 .card-6 .img {
+  width: 100%;
+  height: 64.5%;
+  background-color: aqua;
+  border-bottom: 3px solid black;
+}
+@media screen and (max-width: 460px) {
+  .projects .card-5-6 .card-6 .img {
+    width: 100%;
+    height: auto;
+    background-color: black;
+  }
+}
+.projects .card-5-6 .card-6 .img img {
+  width: 100%;
+}
+@media screen and (max-width: 460px) {
+  .projects .card-5-6 .card-6 .img img {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
+}
+.projects .card-5-6 .card-6 h3 {
+  font-family: monospace;
+  text-transform: uppercase;
+  text-align: center;
+}
+.projects .card-5-6 .card-6 .buttons {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+@media screen and (max-width: 460px) {
+  .projects .card-5-6 .card-6 .buttons {
+    height: 60px;
+  }
+}
+.projects .card-5-6 .card-6 .buttons a {
+  text-decoration: none;
+  color: black;
+}
+.projects .card-5-6 .card-6 .buttons button {
+  width: 150px;
+  height: 40px;
+  background-color: white;
+  border: 2px solid black;
+  transition: 0.2s;
+  font-family: nazi;
+  font-size: 12px;
+}
+@media screen and (max-width: 460px) {
+  .projects .card-5-6 .card-6 .buttons button {
+    width: 100px;
+    height: 35px;
+  }
+}
+.projects .card-5-6 .card-6 .buttons button:hover {
+  cursor: pointer;
+  background-color: rgb(233, 233, 233);
+  box-shadow: 2px 2px 2px black;
+}
+
+.contact {
+  width: 100%;
+  height: 90vh;
+  min-height: 800px;
+  position: relative;
+}
+@media screen and (max-width: 650px) {
+  .contact {
+    min-height: 680px;
+    height: 680px;
+  }
+}
+.contact .title {
+  width: 1200px;
+  height: auto;
+  margin: auto;
+  background-color: rgb(255, 255, 255);
+}
+@media screen and (max-width: 1200px) {
+  .contact .title {
+    width: 95%;
+  }
+}
+.contact .title h2 {
+  text-align: start;
+  padding-top: 100px;
+  font-family: nazi;
+  text-transform: uppercase;
+  font-size: 28px;
+  color: white;
+  text-shadow: -4px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+}
+@media screen and (max-width: 650px) {
+  .contact .title h2 {
+    padding-top: 40px;
+  }
+}
+.contact .form {
+  width: 1200px;
+  height: 550px;
+  background-color: rgb(255, 255, 255);
+  margin: auto;
+  border: 2px solid black;
+  transition: 3s;
+}
+@media screen and (max-width: 1200px) {
+  .contact .form {
+    width: 95%;
+  }
+}
+@media screen and (max-width: 650px) {
+  .contact .form {
+    height: 450px;
+  }
+}
+.contact .form .name-email {
+  width: 100%;
+  height: 70px;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 650px) {
+  .contact .form .name-email {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.contact .form .name-email .name {
+  width: 45%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+@media screen and (max-width: 650px) {
+  .contact .form .name-email .name {
+    width: 90%;
+    align-items: flex-start;
+    margin: auto;
+  }
+}
+.contact .form .name-email .name label {
+  margin-left: 3px;
+  font-family: nazi;
+  color: white;
+  text-shadow: -4px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+}
+@media screen and (max-width: 650px) {
+  .contact .form .name-email .name label {
+    margin-top: 10px;
+  }
+}
+.contact .form .name-email .name input {
+  width: 80%;
+  margin-top: 5px;
+  height: 30px;
+  border: 2px solid black;
+}
+@media screen and (max-width: 650px) {
+  .contact .form .name-email .name input {
+    width: 100%;
+  }
+}
+.contact .form .name-email .name input:is(:active, :focus) {
+  outline: none;
+}
+.contact .form .name-email .email {
+  width: 45%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+@media screen and (max-width: 650px) {
+  .contact .form .name-email .email {
+    width: 90%;
+    align-items: flex-start;
+    margin: auto;
+  }
+}
+.contact .form .name-email .email label {
+  margin-left: 3px;
+  font-family: nazi;
+  color: white;
+  text-shadow: -4px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+}
+@media screen and (max-width: 650px) {
+  .contact .form .name-email .email label {
+    margin-top: 10px;
+  }
+}
+.contact .form .name-email .email input {
+  width: 80%;
+  margin-top: 5px;
+  height: 30px;
+  border: 2px solid black;
+}
+@media screen and (max-width: 650px) {
+  .contact .form .name-email .email input {
+    width: 99%;
+  }
+}
+.contact .form .name-email .email input:is(:active, :focus) {
+  outline: none;
+}
+.contact .form .text {
+  width: 90%;
+  height: 50%;
+  margin: auto;
+  margin-top: 40px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.contact .form .text label {
+  margin-left: 3px;
+  font-family: nazi;
+  color: white;
+  text-shadow: -4px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+}
+@media screen and (max-width: 650px) {
+  .contact .form .text label {
+    margin-top: 2px;
+  }
+}
+.contact .form .text textarea {
+  resize: none;
+  margin-top: 5px;
+  width: 99%;
+  height: 100%;
+  border: 2px solid black;
+}
+.contact .form .button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+.contact .form .button button {
+  width: 90%;
+  height: 40px;
+  color: white;
+  font-family: nazi;
+  text-shadow: -4px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+  background-color: white;
+  border: 2px solid black;
+  transition: 0.5s;
+}
+@media screen and (max-width: 650px) {
+  .contact .form .button button {
+    width: 91%;
+    margin-left: 5px;
+  }
+}
+.contact .form .button button:hover {
+  cursor: pointer;
+  background-color: black;
+}
+.contact .footer {
+  width: 1200px;
+  height: 60px;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  border-top: 2px solid black;
+  border-right: 2px solid black;
+  border-left: 2px solid black;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition: 3s;
+}
+@media screen and (max-width: 1200px) {
+  .contact .footer {
+    width: 100%;
+    border-left: none;
+    border-right: none;
+  }
+}
+.contact .footer .goback-1 {
+  position: absolute;
+  right: 1vw;
+  bottom: 1vh;
+}
+.contact .footer .goback-1 .goBack {
+  background-color: rgb(255, 255, 255);
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 2px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.2s;
+}
+.contact .footer .goback-1 .goBack img {
+  width: 80%;
+}
+.contact .footer .goback-1 .goBack:hover {
+  cursor: pointer;
+  background-color: rgb(207, 207, 207);
+  box-shadow: 1px 2px 2px black;
+}
+.contact .footer img {
+  width: 40px;
+  transition: 0.3s;
+}
+.contact .footer img:hover {
+  cursor: pointer;
+  width: 50px;
+}/*# sourceMappingURL=styles.css.map */

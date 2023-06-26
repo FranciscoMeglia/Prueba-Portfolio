@@ -1,0 +1,1341 @@
+// IMPORTS
+@import '../mediaQ/mediaQ.scss' ;
+
+@font-face {
+     font-family: 'nazi' ;
+     src: url('/assets/WILD-WORLD.ttf');
+}
+
+
+
+html , body {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+// MAIN
+.main {
+    width: 100%;
+    height: 100vh;
+    min-height: 900px;
+    background-color: rgb(255, 255, 255);
+    //background-image: url("https://images.pexels.com/photos/1939485/pexels-photo-1939485.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    margin: 0;
+    padding: 0;
+    position: relative;
+
+    // NAV
+    .nav {
+        width: 1200px;
+        height: 60px;
+        margin: auto;
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        border-bottom: 2px solid black;
+        border-right: 2px solid black;
+        border-left: 2px solid black;
+
+        @include resp {
+            width: 100%;
+            border-left: none;
+            border-right: none;
+        }
+
+        @include tablet {
+            justify-content: space-between;
+        }
+    
+        img {
+            width: 40px;
+            display: none;
+
+            @include tablet {
+                display: block;
+                padding-right: 10px;
+                cursor: pointer;
+            }
+        }
+    
+        .logo {
+            @include tablet {
+                padding-left: 10px;
+            }
+
+            h3 {
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 20px;
+                font-weight: 900;
+                color: white;
+                text-transform: uppercase;
+                text-shadow: -2px 2px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black; 
+            }
+        }
+    
+        .nav-container {
+            @include tablet {
+                display: none;
+            }
+
+            ul {
+                list-style: none;
+                display: flex;
+                gap: 20px;
+    
+                a {
+                    text-decoration: none;
+                    color: white;
+                    font-family: nazi;
+                    text-transform: uppercase;
+                    font-size: 13px;
+                    text-shadow: -2px 2px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black; 
+                    transition: 0.2s;
+    
+                    &:hover {
+                        color: black;
+                        text-shadow: none; 
+                    }
+                }
+            }
+        }
+    }
+
+    // NAV MOBILE
+    .navMobile {
+        width: 100%;
+        height: 100vh;
+        margin: auto;
+        background-color: rgb(255, 255, 255);
+        display: flex;
+    
+        img {
+            width: 25px;
+            position: absolute;
+            top: 2vh;
+            right: 7vw;
+            opacity: 0.8;
+        }
+    
+        .logo {
+            display: none;
+        }
+    
+        .nav-container {
+            width: auto;
+            height: auto;
+            margin: auto;
+            background-color: white;
+            display: block;
+
+           ul {
+                list-style: none;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                gap: 20px;
+    
+                a {
+                    text-decoration: none;
+                    color: white;
+                    font-family: nazi;
+                    text-transform: uppercase;
+                    font-size: 25px;
+                    text-shadow: -2px 2px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black; 
+                    transition: 0.2s;
+    
+                    &:hover {
+                        color: black;
+                        text-shadow: none; 
+                    }
+                }
+            }
+        }
+    }
+
+    .main-content {
+        width: 100%;
+        height: calc(100vh - 60px);
+        min-height: calc(900px - 60px);
+        background-color: rgb(255, 255, 255);
+        //background-image: url("https://images.pexels.com/photos/1939485/pexels-photo-1939485.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+        background-attachment: fixed;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+
+        @include tablet {
+            flex-direction: column-reverse;
+            gap: 0;
+        }
+
+        .main-content1 {
+            width: 590px;
+            height: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+
+            @include tablet {
+                justify-content: flex-start;
+                align-items: center;
+                width: 90%;
+            }
+
+            & h1 {
+                font-size: 50px;
+                color: white;
+                margin-top: 20px;
+                margin-bottom: 0;
+                margin-left: 5px;
+                font-family: nazi ;
+                text-transform: uppercase;
+                transition: 1s;
+                text-shadow: -10px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black; 
+
+                @include tablet {
+                    font-size: 30px;
+                    text-align: center;
+                }
+            }
+
+            & h2 {
+                font-family: nazi;
+                text-transform: uppercase;
+                color: white;
+                text-shadow: -2px 2px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black; 
+
+                @include tablet {
+                    text-align: center;
+                }
+            }
+
+            .buttons {
+                width: auto;
+                height: auto;
+                display: flex;
+                align-items: center;
+                gap: 25px;
+
+                @include tablet {
+                    flex-direction: column;
+                    gap: 10px;
+                }
+
+                a {
+                    text-decoration: none;
+                }
+                
+                .linkedin {
+                    width: 220px;
+                    height: 50px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 10px;
+                    background-color: white;
+                    border: 3px solid black;
+                    transition: 0.2s;
+                    font-family: nazi;
+                    
+                    &:hover {
+                        cursor: pointer;
+                        background-color: rgb(233, 233, 233);
+                        box-shadow: 2px 2px 2px black;
+                    }
+    
+                    img {
+                        width: 40px;
+                    }
+                }
+    
+                .github {
+                    width: 220px;
+                    height: 50px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 10px;
+                    background-color: white;
+                    border: 3px solid black;
+                    transition: 0.2s;
+                    font-family: nazi;
+
+                    &:hover {
+                        cursor: pointer;
+                        background-color: rgb(233, 233, 233);
+                        box-shadow: 2px 2px 2px black;
+                    }
+    
+                    img {
+                        width: 28px;
+                    }
+                }   
+            }
+        }
+
+        .main-content2 {
+            width: 590px;
+            height: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            @include tablet {
+                margin-top: 30px;
+                width: 90%;
+            }
+
+            img {
+                width: 70%;
+                //border-radius: 100%;
+                //border: 2px solid black;
+
+                @include tablet {
+                    width: 300px;
+                }
+            }
+        }
+    }
+
+    .down {
+        width: 200px;
+        height: 50px;
+        position: absolute;
+        bottom: 2vh;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+
+        a {
+            text-decoration: none;
+        }
+
+        img {
+            width: 40px;
+            
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+// ABOUT
+
+.about-skills {
+    width: 100%;
+    height: 60vh;
+    min-height: 580px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    @include tablet {
+        height: auto;
+    }
+
+    .title {
+        background-color: rgb(255, 255, 255);
+        width: 1200px;
+
+        @include tablet {
+            width: 95%;
+        }
+
+        h2 {
+            text-align: start;
+            font-family: nazi;
+            text-transform: uppercase;
+            font-size: 28px;
+            color: white;
+            text-shadow: -4px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black; 
+
+            @include tablet {
+                text-align: center;
+            }
+        }
+    }
+
+    .about-skills-container {
+        width: 1200px;
+        height: 320px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px; 
+
+        @include tablet {
+            height: auto;
+            flex-direction: column;
+            width: 100%;
+        }
+
+        .about {
+            width: 590px;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid black;
+            transition: 3s;
+
+            @include mobile {
+                width: 90%;
+            }
+
+            p {
+                color: black;
+                font-family: monospace;
+                font-size: 20px;
+                width: 90%;
+            }
+
+            ul {
+                li {
+                    color: black;
+                    font-size: 15px;
+                    font-family: monospace;
+
+                    img {
+                        width: 18px;
+                        
+                    }
+                }
+            }
+        }
+    
+        .skills {
+            width: 590px;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            transition: 3s;
+
+            @include tablet {
+                padding-top: 20px;
+                padding-bottom: 30px;
+            }
+
+            @include mobile {
+                width: 95%;
+            }
+
+            .skills-container {
+                width: 100%;
+                height: 90px;
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                gap: 20px;
+
+                @include tablet {
+                    justify-content: center;
+                }
+
+                .skill {
+                    width: 100px;
+                    height: 100%;
+                    background-color: white;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border: 2px solid black;
+                    
+                    img {
+                        width: 60px;
+                        transition: 0.2s;
+
+                        &:hover {
+                            width: 70px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// PROJECTS
+.projects {
+    width: 100%;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+
+    .title {
+        background-color: rgb(255, 255, 255);
+        margin: auto;
+        width: 1200px;
+
+        @include resp {
+            width: 95%;
+        }
+
+        h2 {
+            text-align: end;
+            font-family: nazi;
+            text-transform: uppercase;
+            font-size: 28px;
+            color: white;
+            text-shadow: -4px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black; 
+
+            @include tablet {
+                text-align: center;
+            }
+        }
+    }
+
+    .card-1-2 {
+        margin: auto;
+        width: 1200px;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @include resp {
+            width: 95%;
+        }
+
+        @include tablet {
+            flex-direction: column;
+            margin-top: 40px;
+            gap: 40px;
+        }
+
+        .card-1 {
+            width: 450px;
+            height: 350px;
+            background-color: rgb(255, 255, 255);
+            border: 2px solid black;
+            transition: 0.3s;
+
+            @include cards {
+                width: 90%;
+                height: auto;
+            }
+        
+            &:hover {
+                box-shadow: -10px 10px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+            }
+        
+            .img {
+                width: 100%;
+                height: 64.5%;
+                background-color: aqua;
+                border-bottom: 3px solid black;
+
+                @include cards {
+                    width: 100%;
+                    height: auto;
+                    background-color: black;
+                }
+        
+                img {
+                    width: 100%;
+
+                    @include cards {
+                        width: 100%;
+                        height: 100%;
+                        margin: 0;
+                    }
+                }
+            }
+        
+            h3 {
+                font-family: monospace;
+                text-transform: uppercase;
+                text-align: center;
+            }
+        
+            .buttons {
+                width: 100%;
+                height: auto;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+
+                @include cards {
+                    height: 60px;
+                }
+        
+                a{
+                    text-decoration: none;
+                    color: black;
+                }
+        
+                button {
+                    width: 150px;
+                    height: 40px;
+                    background-color: white;
+                    border: 2px solid black;
+                    transition: 0.2s;
+                    font-family: nazi;
+                    font-size: 12px;
+
+                    @include cards {
+                        width: 100px;
+                        height: 35px;
+                    }
+        
+                    &:hover {
+                        cursor: pointer;
+                        background-color: rgb(233, 233, 233);
+                        box-shadow: 2px 2px 2px black;
+                    }
+                }
+            }
+        }
+
+        .card-2 {
+            width: 450px;
+            height: 350px;
+            background-color: rgb(255, 255, 255);
+            border: 2px solid black;
+            transition: 0.5s;
+
+            @include cards {
+                width: 90%;
+                height: auto;
+            }
+        
+            &:hover {
+                box-shadow: -10px 10px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+            }
+        
+            .img {
+                width: 100%;
+                height: 64.5%;
+                background-color: aqua;
+                border-bottom: 3px solid black;
+
+                @include cards {
+                    width: 100%;
+                    height: auto;
+                    background-color: black;
+                }
+        
+                img {
+                    width: 100%;
+
+                    @include cards {
+                        width: 100%;
+                        height: 100%;
+                        margin: 0;
+                    }
+                }
+            }
+        
+            h3 {
+                font-family: monospace;
+                text-transform: uppercase;
+                text-align: center;
+            }
+        
+            .buttons {
+                width: 100%;
+                height: auto;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+
+                @include cards {
+                    height: 60px;
+                }
+        
+                a{
+                    text-decoration: none;
+                    color: black;
+                }
+        
+                button {
+                    width: 150px;
+                    height: 40px;
+                    background-color: white;
+                    border: 2px solid black;
+                    transition: 0.2s;
+                    font-family: nazi;
+                    font-size: 12px;
+
+                    @include cards {
+                        width: 100px;
+                        height: 35px;
+                    }
+        
+                    &:hover {
+                        cursor: pointer;
+                        background-color: rgb(233, 233, 233);
+                        box-shadow: 2px 2px 2px black;
+                    }
+                }
+            }
+        }
+    }
+
+    .card-3-4 {
+        margin: auto;
+        width: 1200px;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 20px;
+
+        @include resp {
+            width: 95%;
+        }
+
+        @include tablet {
+            flex-direction: column;
+            margin-top: 40px;
+            gap: 40px;
+        }
+
+        .card-3 {
+            width: 450px;
+            height: 350px;
+            background-color: rgb(255, 255, 255);
+            border: 2px solid black;
+            transition: 0.5s;
+
+            @include cards {
+                width: 90%;
+                height: auto;
+            }
+        
+            &:hover {
+                box-shadow: -10px 10px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+            }
+        
+            .img {
+                width: 100%;
+                height: 64.5%;
+                background-color: aqua;
+                border-bottom: 3px solid black;
+
+                @include cards {
+                    width: 100%;
+                    height: auto;
+                    background-color: black;
+                }
+        
+                img {
+                    width: 100%;
+
+                    @include cards {
+                        width: 100%;
+                        height: 100%;
+                        margin: 0;
+                    }
+                }
+            }
+        
+            h3 {
+                font-family: monospace;
+                text-transform: uppercase;
+                text-align: center;
+            }
+        
+            .buttons {
+                width: 100%;
+                height: auto;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+
+                @include cards {
+                    height: 60px;
+                }
+        
+                a {
+                    text-decoration: none;
+                    color: black;
+                }
+        
+                button {
+                    width: 150px;
+                    height: 40px;
+                    background-color: white;
+                    border: 2px solid black;
+                    transition: 0.2s;
+                    font-family: nazi;
+                    font-size: 12px;
+
+                    @include cards {
+                        width: 100px;
+                        height: 35px;
+                    }
+        
+                    &:hover {
+                        cursor: pointer;
+                        background-color: rgb(233, 233, 233);
+                        box-shadow: 2px 2px 2px black;
+                    }
+                }
+            }
+        }
+
+        .card-4 {
+            width: 450px;
+            height: 350px;
+            background-color: rgb(255, 255, 255);
+            border: 2px solid black;
+            transition: 0.5s;
+
+            @include cards {
+                width: 90%;
+                height: auto;
+            }
+        
+            &:hover {
+                box-shadow: -10px 10px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+            }
+        
+            .img {
+                width: 100%;
+                height: 64.5%;
+                background-color: aqua;
+                border-bottom: 3px solid black;
+
+                @include cards {
+                    width: 100%;
+                    height: auto;
+                    background-color: black;
+                }
+        
+                img {
+                    width: 100%;
+
+                    @include cards {
+                        width: 100%;
+                        height: 100%;
+                        margin: 0;
+                    }
+                }
+            }
+        
+            h3 {
+                font-family: monospace;
+                text-transform: uppercase;
+                text-align: center;
+            }
+        
+            .buttons {
+                width: 100%;
+                height: auto;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+
+                @include cards {
+                    height: 60px;
+                }
+        
+                a {
+                    text-decoration: none;
+                    color: black;
+                }
+        
+                button {
+                    width: 150px;
+                    height: 40px;
+                    background-color: white;
+                    border: 2px solid black;
+                    transition: 0.2s;
+                    font-family: nazi;
+                    font-size: 12px;
+
+                    @include cards {
+                        width: 100px;
+                        height: 35px;
+                    }
+        
+                    &:hover {
+                        cursor: pointer;
+                        background-color: rgb(233, 233, 233);
+                        box-shadow: 2px 2px 2px black;
+                    }
+                }
+            }
+        }
+    }
+
+    .card-5-6 {
+        margin: auto;
+        width: 1200px;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 20px;
+
+        @include resp {
+            width: 95%;
+        }
+
+        @include tablet {
+            flex-direction: column;
+            margin-top: 40px;
+            gap: 40px;
+        }
+
+        .card-5 {
+            width: 450px;
+            height: 350px;
+            background-color: rgb(255, 255, 255);
+            border: 2px solid black;
+            transition: 0.5s;
+
+            @include cards {
+                width: 90%;
+                height: auto;
+            }
+        
+            &:hover {
+                box-shadow: -10px 10px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+            }
+        
+            .img {
+                width: 100%;
+                height: 64.5%;
+                background-color: aqua;
+                border-bottom: 3px solid black;
+
+                @include cards {
+                    width: 100%;
+                    height: auto;
+                    background-color: black;
+                }
+        
+                img {
+                    width: 100%;
+
+                    @include cards {
+                        width: 100%;
+                        height: 100%;
+                        margin: 0;
+                    }
+                }
+            }
+        
+            h3 {
+                font-family: monospace;
+                text-transform: uppercase;
+                text-align: center;
+            }
+        
+            .buttons {
+                width: 100%;
+                height: auto;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+
+                @include cards {
+                    height: 60px;
+                }
+        
+                a {
+                    text-decoration: none;
+                    color: black;
+                }
+        
+                button {
+                    width: 150px;
+                    height: 40px;
+                    background-color: white;
+                    border: 2px solid black;
+                    transition: 0.2s;
+                    font-family: nazi;
+                    font-size: 12px;
+        
+                    @include cards {
+                        width: 100px;
+                        height: 35px;
+                    }
+
+                    &:hover {
+                        cursor: pointer;
+                        background-color: rgb(233, 233, 233);
+                        box-shadow: 2px 2px 2px black;
+                    }
+                }
+            }
+        }
+
+
+        .card-6 {
+            width: 450px;
+            height: 350px;
+            background-color: rgb(255, 255, 255);
+            border: 2px solid black;
+            transition: 0.5s;
+
+            @include cards {
+                width: 90%;
+                height: auto;
+            }
+        
+            &:hover {
+                box-shadow: -10px 10px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+            }
+        
+            .img {
+                width: 100%;
+                height: 64.5%;
+                background-color: aqua;
+                border-bottom: 3px solid black;
+
+                @include cards {
+                    width: 100%;
+                    height: auto;
+                    background-color: black;
+                }
+        
+                img {
+                    width: 100%;
+
+                    @include cards {
+                        width: 100%;
+                        height: 100%;
+                        margin: 0;
+                    }
+                }
+            }
+        
+            h3 {
+                font-family: monospace;
+                text-transform: uppercase;
+                text-align: center;
+            }
+        
+            .buttons {
+                width: 100%;
+                height: auto;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+
+                @include cards {
+                    height: 60px;
+                }
+        
+                a {
+                    text-decoration: none;
+                    color: black;
+                }
+        
+                button {
+                    width: 150px;
+                    height: 40px;
+                    background-color: white;
+                    border: 2px solid black;
+                    transition: 0.2s;
+                    font-family: nazi;
+                    font-size: 12px;
+
+                    @include cards {
+                        width: 100px;
+                        height: 35px;
+                    }
+        
+                    &:hover {
+                        cursor: pointer;
+                        background-color: rgb(233, 233, 233);
+                        box-shadow: 2px 2px 2px black;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// CONTACT
+.contact {
+    width: 100%;
+    height: 90vh;
+    min-height: 800px;
+    position: relative;
+
+    @include mobile {
+        min-height: 680px;
+        height: 680px;
+    }
+
+    .title {
+        width: 1200px;
+        height: auto;
+        margin: auto;
+        background-color: rgb(255, 255, 255);
+
+        @include resp {
+            width: 95%;
+        }
+
+        h2 {
+            text-align: start;
+            padding-top: 100px;
+            font-family: nazi;
+            text-transform: uppercase;
+            font-size: 28px;
+            color: white;
+            text-shadow: -4px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+
+            @include mobile {
+                padding-top: 40px;
+            }
+        }
+    }
+
+    .form {
+        width: 1200px;
+        height: 550px;
+        background-color: rgb(255, 255, 255);
+        margin: auto;
+        border: 2px solid black;
+        transition: 3s;
+
+        @include resp {
+            width: 95%;
+        }
+
+        @include mobile {
+            height: 450px;
+        }
+
+        .name-email {
+            width: 100%;
+            height: 70px;
+            margin-top: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            @include mobile {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .name {
+                width: 45%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+
+                @include mobile {
+                    width: 90%;
+                    align-items: flex-start;
+                    margin: auto;
+                }
+
+                label {
+                    margin-left: 3px;
+                    font-family: nazi;
+                    color: white;
+                    text-shadow: -4px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+
+                    @include mobile {
+                        margin-top: 10px;
+                    }
+                }
+
+                input {
+                    width: 80%;
+                    margin-top: 5px;
+                    height: 30px;
+                    border: 2px solid black;
+
+                    @include mobile {
+                        width: 100%;
+                    }
+
+                    &:is(:active, :focus) {
+                        outline: none;
+                    }
+                }
+            }
+
+            .email {
+                width: 45%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-end;
+
+                @include mobile {
+                    width: 90%;
+                    align-items: flex-start;
+                    margin: auto;
+                }
+
+                label {
+                    margin-left: 3px;
+                    font-family: nazi;
+                    color: white;
+                    text-shadow: -4px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+                    
+                    @include mobile {
+                        margin-top: 10px;
+                    }
+                }
+
+                input {
+                    width: 80%;
+                    margin-top: 5px;
+                    height: 30px;
+                    border: 2px solid black;
+
+                    @include mobile {
+                        width: 99%;
+                    }
+
+                    &:is(:active, :focus) {
+                        outline: none;
+                    }
+                }
+            }
+        }
+
+        .text {
+            width: 90%;
+            height: 50%;
+            margin: auto;
+            margin-top: 40px;
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+
+            label {
+                margin-left: 3px;
+                font-family: nazi;
+                color: white;
+                text-shadow: -4px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+
+                @include mobile {
+                    margin-top: 2px;
+                }
+            }
+
+            textarea {
+                resize: none;
+                margin-top: 5px;
+                width: 99%;
+                height: 100%;
+                border: 2px solid black;
+            }
+        }
+
+        .button {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+
+            button {
+                width: 90%;
+                height: 40px;
+                color: white;
+                font-family: nazi;
+                text-shadow: -4px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+                background-color: white;
+                border: 2px solid black;
+                transition: 0.5s;
+
+                @include mobile {
+                    width: 91%;
+                    margin-left: 5px;
+                }
+
+                &:hover {
+                    cursor: pointer;
+                    background-color: black;
+                }   
+            }
+        }
+    }
+
+    .footer {
+        width: 1200px;
+        height: 60px;
+        background-color: rgb(255, 255, 255);
+        position: absolute;
+        border-top: 2px solid black;
+        border-right: 2px solid black;
+        border-left: 2px solid black;
+        left: 50%;
+        bottom: 0;
+        transform: translateX(-50%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        transition: 3s;
+
+        @include resp {
+            width: 100%;
+            border-left: none;
+            border-right: none;
+        }
+
+        .goback-1 {
+            position: absolute;
+            right: 1vw;
+            bottom: 1vh;
+
+            .goBack {
+                background-color: rgb(255, 255, 255);
+                width: 35px;
+                height: 35px;
+                border-radius: 50%;
+                border: 2px solid black;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transition: 0.2s;
+
+                img {
+                    width: 80%;
+                }
+
+                &:hover {
+                    cursor: pointer;
+                    background-color: rgb(207, 207, 207);
+                    box-shadow: 1px 2px 2px black;
+                }
+            }
+        }
+
+        img {
+            width: 40px;
+            transition: 0.3s;
+
+            &:hover {
+                cursor: pointer;
+                width: 50px;
+            }
+        }
+    }
+}

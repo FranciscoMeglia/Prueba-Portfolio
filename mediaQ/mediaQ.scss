@@ -1,0 +1,23 @@
+@mixin resp {
+    @media screen and (max-width: 1200px) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media screen and (max-width: 1000px) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media screen and (max-width: 650px) {
+        @content;
+    }
+}
+
+@mixin cards {
+    @media screen and (max-width: 460px) {
+        @content;
+    }
+}
